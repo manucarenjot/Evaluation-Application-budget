@@ -48,7 +48,7 @@ depensesTotal.innerHTML = 'Total : ' + (Number.parseInt(depenseFixe.value) +
     console.log(depenseFixe);
 }
 
-calcdepenses.addEventListener("click", ()=>{
+calcdepenses.addEventListener("click", () => {
     calculDesDepenses()
 })
 
