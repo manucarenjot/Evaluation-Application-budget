@@ -66,8 +66,19 @@ h1 {
     margin-right: 50px;
     padding: 5px;
 }
+#epargneAndResultat {
+    width: 90%;
+    height: 200px;
+    border: ridge 10px #721925;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
 #epargne {
-    width: 45%;
+    width: 50%;
     height: 200px;
     border: ridge 10px #721925;
     display: flex;
@@ -86,6 +97,30 @@ h1 {
 }
 
 #calcEpargne {
+    margin-right: 50px;
+    padding: 5px;
+}
+
+#divResultat {
+    width: 50%;
+    height: 200px;
+    border: ridge 10px #721925;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+#totalResultat {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#calcResultat {
     margin-right: 50px;
     padding: 5px;
 }
