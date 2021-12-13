@@ -17,7 +17,6 @@ let depenseOcas = document.getElementById('depenseOcas');
 let sortie = document.getElementById('sorties');
 let autre = document.getElementById('autre');
 let depensesTotal = document.getElementById('depensesTotal');
-let totalD = document.getElementById('totalD');
 
 let calcdepenses = document.getElementById('calcDepenses');
 
@@ -27,7 +26,7 @@ let calcdepenses = document.getElementById('calcDepenses');
  function to add all the inputs
  */
 function calculDesDepenses() {
-totalD.innerHTML = ' ' + (Number.parseInt(depenseFixe.value) +
+depensesTotal.innerHTML = 'Total : ' + (Number.parseInt(depenseFixe.value) +
     Number.parseInt(loyerCharge.value)
 + Number.parseInt(credit.value)
 + Number.parseInt(eauGazElec.value)
@@ -79,6 +78,8 @@ let epargneTotal = document.getElementById('epargneTotal');
 function calculEpargne() {
     epargneTotal.innerHTML = 'Total : ' + (Number.parseInt(epargne.value));
 }
+
+
 
 calcEpargne.addEventListener("click", () => {
     calculEpargne()
