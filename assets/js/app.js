@@ -38,11 +38,11 @@ depensesTotal.innerHTML = 'Total : ' + (Number.parseInt(depenseFixe.value) +
 + Number.parseInt(impotRev.value)
 + Number.parseInt(impotLocaux.value)
 + Number.parseInt(depenseCourantes.value)
-+ Number.parseInt(courses.value)
-+ Number.parseInt(essence.value)
-+ Number.parseInt(sport.value)
++ Number.parseInt(courses.value)*4
++ Number.parseInt(essence.value)*4
++ Number.parseInt(sport.value)/12
 + Number.parseInt(depenseOcas.value)
-+ Number.parseInt(sortie.value)
++ Number.parseInt(sortie.value)*4
 + Number.parseInt(autre.value));
     console.log(depensesTotal);
     console.log(depenseFixe);
