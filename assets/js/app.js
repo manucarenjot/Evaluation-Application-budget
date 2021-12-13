@@ -51,3 +51,22 @@ depensesTotal.innerHTML = 'Total : ' + (Number.parseInt(depenseFixe.value) +
 calcdepenses.addEventListener("click", ()=>{
     calculDesDepenses()
 })
+
+let salaire = document.getElementById('salaire');
+let aide = document.getElementById('aide');
+let rentes = document.getElementById('rentes');
+let autreRecettes = document.getElementById('autreRecettes');
+let recetteTotal = document.getElementById('recettesTotal');
+let calcRecette = document.getElementById('calcRecette');
+
+
+function calculRecette() {
+    recetteTotal.innerHTML = 'Total : ' + (Number.parseInt(salaire.value)
+    + Number.parseInt(aide.value)
+    + Number.parseInt(rentes.value)
+    + Number.parseInt(autreRecettes.value));
+}
+
+calcRecette.addEventListener("click", () => {
+    calculRecette()
+})
