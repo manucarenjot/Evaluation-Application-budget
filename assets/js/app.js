@@ -70,3 +70,15 @@ function calculRecette() {
 calcRecette.addEventListener("click", () => {
     calculRecette()
 })
+
+let epargne = document.getElementById('libre');
+let calcEpargne = document.getElementById('calcEpargne');
+let epargneTotal = document.getElementById('epargneTotal');
+
+function calculEpargne() {
+    epargneTotal.innerHTML = 'Total : ' + (Number.parseInt(epargne.value));
+}
+
+calcEpargne.addEventListener("click", () => {
+    calculEpargne()
+})
