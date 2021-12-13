@@ -16,5 +16,38 @@ let sport = document.getElementById('sport');
 let depenseOcas = document.getElementById('depenseOcas');
 let sortie = document.getElementById('sorties');
 let autre = document.getElementById('autre');
+let depensesTotal = document.getElementById('depensesTotal');
+
+let calcdepenses = document.getElementById('calcDepenses');
 
 
+
+/**
+ function to add all the inputs
+ */
+function calculDesDepenses() {
+depensesTotal.innerHTML = 'Total : ' + (Number.parseInt(depenseFixe.value) +
+    Number.parseInt(loyerCharge.value)
++ Number.parseInt(credit.value)
++ Number.parseInt(eauGazElec.value)
++ Number.parseInt(telNet.value)
++ Number.parseInt(assurHabitat.value)
++ Number.parseInt(assurVehic.value)
++ Number.parseInt(mutuel.value)
++ Number.parseInt(fraisGarde.value)
++ Number.parseInt(impotRev.value)
++ Number.parseInt(impotLocaux.value)
++ Number.parseInt(depenseCourantes.value)
++ Number.parseInt(courses.value)
++ Number.parseInt(essence.value)
++ Number.parseInt(sport.value)
++ Number.parseInt(depenseOcas.value)
++ Number.parseInt(sortie.value)
++ Number.parseInt(autre.value));
+    console.log(depensesTotal);
+    console.log(depenseFixe);
+}
+
+calcdepenses.addEventListener("click", ()=>{
+    calculDesDepenses()
+})
