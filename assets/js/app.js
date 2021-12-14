@@ -20,8 +20,6 @@ let depensesTotal = document.getElementById('depensesTotal');
 
 let calcdepenses = document.getElementById('calcDepenses');
 
-
-
 /**
  function to add all the inputs
  */
@@ -84,3 +82,42 @@ function calculEpargne() {
 calcEpargne.addEventListener("click", () => {
     calculEpargne()
 })
+
+
+let resultat = document.getElementById('resultat');
+let calcResultat = document.getElementById('calcResultat');
+
+function calcTotal() {
+    resultat.innerHTML = 'Total : ' + (Number.parseInt(salaire.value)
+        + Number.parseInt(aide.value)
+        + Number.parseInt(rentes.value)
+        + Number.parseInt(autreRecettes.value)
+        - Number.parseInt(depenseFixe.value)
+        - Number.parseInt(loyerCharge.value)
+        - Number.parseInt(credit.value)
+        - Number.parseInt(eauGazElec.value)
+        - Number.parseInt(telNet.value)
+        - Number.parseInt(assurHabitat.value)
+        - Number.parseInt(assurVehic.value)
+        - Number.parseInt(mutuel.value)
+        - Number.parseInt(fraisGarde.value)
+        - Number.parseInt(impotRev.value)
+        - Number.parseInt(impotLocaux.value)
+        - Number.parseInt(depenseCourantes.value)
+        - Number.parseInt(courses.value)*4
+        - Number.parseInt(essence.value)*4
+        - Number.parseInt(sport.value)/12
+        - Number.parseInt(depenseOcas.value)
+        - Number.parseInt(sortie.value)*4
+        - Number.parseInt(autre.value)
+        - Number.parseInt(epargne.value)
+    );
+}
+
+calcResultat.addEventListener("click", () => {
+    calculDesDepenses()
+    calculRecette()
+    calculEpargne()
+    calcTotal()
+})
+
