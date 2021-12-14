@@ -93,8 +93,7 @@ let calcResultat = document.getElementById('calcResultat');
 
 
 /**
- *
- total calculation
+ * total calculation
  */
 function calcTotal() {
     resultat.innerHTML = (Number.parseInt(salaire.value)
