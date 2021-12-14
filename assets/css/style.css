@@ -23,7 +23,6 @@ h1 {
     justify-content: center;
     align-items: center;
     align-content: space-around;
-    border: solid 1px green;
 }
 
 #depense {
@@ -102,7 +101,7 @@ input {
 
 #epargne {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border: ridge 10px #721925;
     display: flex;
     flex-direction: row;
@@ -126,7 +125,7 @@ input {
 
 #divResultat {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border: ridge 10px #721925;
     display: flex;
     flex-direction: row;
@@ -149,7 +148,40 @@ input {
 }
 
 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
+    #budget {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        border: solid 1px green;
+    }
+    #depense {
+        width: 100%;
+    }
+
+    input {
+        width: 30%;
+    }
+
+    #ligne {
+        width: 100%;
+    }
+
+    #recettes {
+        height: 300px;
+    }
+    #epargne {
+        height: 300px;
+    }
+    #divResultat {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 850px){
     #budget {
         width: 100%;
         display: flex;
