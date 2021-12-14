@@ -127,11 +127,10 @@ calcResultat.addEventListener("click", () => {
 
     if (Number.parseInt(resultat.innerHTML) < 0) {
         document.getElementById('sad').style.display = 'initial';
+        document.getElementById('happy').style.display = 'none';
     }
     if (Number.parseInt(resultat.innerHTML) > 0) {
         document.getElementById('happy').style.display = 'initial';
+        document.getElementById('sad').style.display = 'none';
     }
-
-
-
 })
