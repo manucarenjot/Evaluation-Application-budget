@@ -87,8 +87,6 @@ calcEpargne.addEventListener("click", () => {
 let resultat = document.getElementById('resultat');
 let calcResultat = document.getElementById('calcResultat');
 
-let test
-
 function calcTotal() {
     resultat.innerHTML = (Number.parseInt(salaire.value)
         + Number.parseInt(aide.value)
@@ -123,7 +121,6 @@ calcResultat.addEventListener("click", () => {
     calculRecette()
     calculEpargne()
     calcTotal()
-    console.log(Number.parseInt(resultat.innerHTML))
 
     if (Number.parseInt(resultat.innerHTML) < 0) {
         document.getElementById('sad').style.display = 'initial';
@@ -133,4 +130,11 @@ calcResultat.addEventListener("click", () => {
         document.getElementById('happy').style.display = 'initial';
         document.getElementById('sad').style.display = 'none';
     }
+})
+
+document.getElementById('reset').addEventListener("click", () => {
+    depensesTotal.innerHTML = '';
+        recetteTotal.innerHTML = '';
+    epargneTotal.innerHTML = '';
+        resultat.innerHTML = '';
 })
