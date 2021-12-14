@@ -41,9 +41,7 @@ depensesTotal.innerHTML = 'Total : ' + (Number.parseInt(depenseFixe.value) +
 + Number.parseInt(sport.value)/12
 + Number.parseInt(depenseOcas.value)
 + Number.parseInt(sortie.value)*4
-+ Number.parseInt(autre.value));
-    console.log(depensesTotal);
-    console.log(depenseFixe);
++ Number.parseInt(autre.value)).toString();
 }
 
 calcdepenses.addEventListener("click", () => {
@@ -58,11 +56,14 @@ let recetteTotal = document.getElementById('recettesTotal');
 let calcRecette = document.getElementById('calcRecette');
 
 
+/**
+ * revenue calculation
+ */
 function calculRecette() {
     recetteTotal.innerHTML = 'Total : '+ (Number.parseInt(salaire.value)
     + Number.parseInt(aide.value)
     + Number.parseInt(rentes.value)
-    + Number.parseInt(autreRecettes.value));
+    + Number.parseInt(autreRecettes.value)).toString();
 }
 
 calcRecette.addEventListener("click", () => {
@@ -73,8 +74,11 @@ let epargne = document.getElementById('libre');
 let calcEpargne = document.getElementById('calcEpargne');
 let epargneTotal = document.getElementById('epargneTotal');
 
+/**
+ * savings calculation
+ */
 function calculEpargne() {
-    epargneTotal.innerHTML = 'Total : ' + (Number.parseInt(epargne.value));
+    epargneTotal.innerHTML = 'Total : ' + (Number.parseInt(epargne.value)).toString();
 }
 
 
@@ -87,6 +91,11 @@ calcEpargne.addEventListener("click", () => {
 let resultat = document.getElementById('resultat');
 let calcResultat = document.getElementById('calcResultat');
 
+
+/**
+ *
+ total calculation
+ */
 function calcTotal() {
     resultat.innerHTML = (Number.parseInt(salaire.value)
         + Number.parseInt(aide.value)
@@ -111,7 +120,7 @@ function calcTotal() {
         - Number.parseInt(sortie.value)*4
         - Number.parseInt(autre.value)
         - Number.parseInt(epargne.value)
-    );
+    ).toString();
 
 
 }
@@ -134,7 +143,7 @@ calcResultat.addEventListener("click", () => {
 
 document.getElementById('reset').addEventListener("click", () => {
     depensesTotal.innerHTML = '';
-        recetteTotal.innerHTML = '';
+    recetteTotal.innerHTML = '';
     epargneTotal.innerHTML = '';
-        resultat.innerHTML = '';
+    resultat.innerHTML = '';
 })
