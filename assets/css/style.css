@@ -11,13 +11,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     margin: 30px;
 }
 
+#budget {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    border: solid 1px green;
+}
+
 #depense {
-    width: 90%;
-    height: 1000px;
+    width: 50%;
+    height: 700px;
     border: ridge 10px #721925;
     display: flex;
     flex-direction: row;
@@ -28,7 +39,8 @@ h1 {
 }
 
 .depenses {
-    width: 100%;
+    width: 50%;
+    height: 5%;
     font-size: 0.7em;
     margin-left: 20px;
 }
@@ -43,6 +55,13 @@ input {
     flex-direction: row;
     justify-content: center;
 }
+#ligne {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #calcDepenses {
     margin-right: 50px;
@@ -50,8 +69,8 @@ input {
 }
 
 #recettes {
-    width: 90%;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     border: ridge 10px #721925;
     display: flex;
     flex-direction: row;
@@ -72,19 +91,9 @@ input {
     margin-right: 50px;
     padding: 5px;
 }
-#epargneAndResultat {
-    width: 90%;
-    height: 200px;
-    border: ridge 10px #721925;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    align-items: center;
-}
+
 #epargne {
-    width: 50%;
+    width: 100%;
     height: 200px;
     border: ridge 10px #721925;
     display: flex;
@@ -108,7 +117,7 @@ input {
 }
 
 #divResultat {
-    width: 50%;
+    width: 100%;
     height: 200px;
     border: ridge 10px #721925;
     display: flex;

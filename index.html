@@ -9,128 +9,129 @@
 </head>
 <body>
 <h1>Application budget</h1>
-<div id="depense">
-    <div class="depenses">
-        <h5>- Dépenses fixe :</h5>
-        <input type="number" id="depenseFixe" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- Loyer et charges :</h5>
-        <input type="number" id="loyerCharges" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- Remboursement de crédits :</h5>
-        <input type="number" id="credit" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- eau/électricité/gaz</h5>
-        <input type="number" id="eauGazElec" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- téléphone - internet </h5>
-        <input type="number" id="telNet" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- assurance habitation</h5>
-        <input type="number" id="assurHabita" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- assurance véhicules</h5>
-        <input type="number" id="assuVehic" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- mutuelle santé</h5>
-        <input type="number" id="mutuel" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- frais de garde</h5>
-        <input type="number" id="fraisGarde" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- impôts sur le revenu</h5>
-        <input type="number" id="impotRev" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- impôts locaux</h5>
-        <input type="number" id="impotLocaux" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- Les dépenses courantes :</h5>
-        <input type="number" id="depenseCourantes" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- courses :</h5>
-        <input type="number" id="courses" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- essence/frais de transport en commun :</h5>
-        <input type="number" id="essence" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- activités sportives et culturelles :</h5>
-        <input type="number" id="sport" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- Les dépenses occasionnelles :</h5>
-        <input type="number" id="depenseOcas" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- sorties :</h5>
-        <input type="number" id="sorties" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="depenses">
-        <h5>- Les autres dépenses</h5>
-        <input type="number" id="autre" value="0" placeholder="écrivez ici">
-    </div>
-
-    <div id="divTotaldepenses">
-        <button id="calcDepenses">Calcul</button>
-        <h2 id="depensesTotal">Total :  </h2>
-    </div>
-</div>
-
-<div id="recettes">
-    <div class="recettes">
-        <H5>Salaire :</H5>
-        <input type="number" id="salaire" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="recettes">
-        <H5>Les aides (allocations, etc) :</H5>
-        <input type="number" id="aide" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="recettes">
-        <H5>Les rentes :</H5>
-        <input type="number" id="rentes" value="0" placeholder="écrivez ici">
-    </div>
-    <div class="recettes">
-        <H5>Autre :</H5>
-        <input type="number" id="autreRecettes" value="0" placeholder="écrivez ici">
-    </div>
-    <div id="divTotalRecette">
-        <button id="calcRecette">Calcul</button>
-        <h2 id="recettesTotal">Total : </h2>
-    </div>
-</div>
-<div id="epargneAndResultat">
-    <div id="epargne">
-        <div class="epargne">
-            <h5>Epargne :</h5>
-            <input type="number" id="libre" value="0" placeholder="écrivez ici">
+<div id="budget">
+    <div id="depense">
+        <div class="depenses">
+            <h5>- Dépenses fixe :</h5>
+            <input type="number" id="depenseFixe" value="0" placeholder="écrivez ici">
         </div>
-        <div id="divTotalEpargne">
-            <button id="calcEpargne">Calcul</button>
-            <h2 id="epargneTotal">Total : </h2>
+        <div class="depenses">
+            <h5>- Loyer et charges :</h5>
+            <input type="number" id="loyerCharges" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- Remboursement de crédits :</h5>
+            <input type="number" id="credit" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- eau/électricité/gaz</h5>
+            <input type="number" id="eauGazElec" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- téléphone - internet </h5>
+            <input type="number" id="telNet" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- assurance habitation</h5>
+            <input type="number" id="assurHabita" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- assurance véhicules</h5>
+            <input type="number" id="assuVehic" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- mutuelle santé</h5>
+            <input type="number" id="mutuel" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- frais de garde</h5>
+            <input type="number" id="fraisGarde" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- impôts sur le revenu</h5>
+            <input type="number" id="impotRev" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- impôts locaux</h5>
+            <input type="number" id="impotLocaux" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- Les dépenses courantes :</h5>
+            <input type="number" id="depenseCourantes" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- courses :</h5>
+            <input type="number" id="courses" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- essence/frais de transport en commun :</h5>
+            <input type="number" id="essence" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- activités sportives et culturelles :</h5>
+            <input type="number" id="sport" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- Les dépenses occasionnelles :</h5>
+            <input type="number" id="depenseOcas" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- sorties :</h5>
+            <input type="number" id="sorties" value="0" placeholder="écrivez ici">
+        </div>
+        <div class="depenses">
+            <h5>- Les autres dépenses</h5>
+            <input type="number" id="autre" value="0" placeholder="écrivez ici">
+        </div>
+
+        <div id="divTotaldepenses">
+            <button id="calcDepenses">Calcul</button>
+            <h2 id="depensesTotal">Total : </h2>
         </div>
     </div>
-    <div id="divResultat">
-        <h2>Calcul du resultat total :</h2>
-        <div id="totalResultat">
-            <button id="calcResultat">Calcul</button>
-            <h2 id="resultat">Total : </h2>
+    <div id="ligne">
+        <div id="recettes">
+            <div class="recettes">
+                <H5>Salaire :</H5>
+                <input type="number" id="salaire" value="0" placeholder="écrivez ici">
+            </div>
+            <div class="recettes">
+                <H5>Les aides (allocations, etc) :</H5>
+                <input type="number" id="aide" value="0" placeholder="écrivez ici">
+            </div>
+            <div class="recettes">
+                <H5>Les rentes :</H5>
+                <input type="number" id="rentes" value="0" placeholder="écrivez ici">
+            </div>
+            <div class="recettes">
+                <H5>Autre :</H5>
+                <input type="number" id="autreRecettes" value="0" placeholder="écrivez ici">
+            </div>
+            <div id="divTotalRecette">
+                <button id="calcRecette">Calcul</button>
+                <h2 id="recettesTotal">Total : </h2>
+            </div>
+        </div>
+        <div id="epargne">
+
+            <div class="epargne">
+                <h5>Epargne :</h5>
+                <input type="number" id="libre" value="0" placeholder="écrivez ici">
+            </div>
+            <div id="divTotalEpargne">
+                <button id="calcEpargne">Calcul</button>
+                <h2 id="epargneTotal">Total : </h2>
+            </div>
+        </div>
+        <div id="divResultat">
+            <h2>Calcul du resultat total :</h2>
+            <div id="totalResultat">
+                <button id="calcResultat">Calcul</button>
+                <h2 id="resultat">Total : </h2>
+            </div>
         </div>
     </div>
 </div>
-
 <script src="assets/js/app.js"></script>
 </body>
 </html>
