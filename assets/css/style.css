@@ -46,7 +46,8 @@ h1 {
 }
 
 input {
-    width: 20%;
+    width: 15%;
+    height: 25px;
 }
 
 #divTotaldepenses {
@@ -78,6 +79,13 @@ input {
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
+}
+
+.recettes {
+    width: 50%;
+    height: 5%;
+    font-size: 0.7em;
+    margin-left: 20px;
 }
 
 #divTotalRecette {
