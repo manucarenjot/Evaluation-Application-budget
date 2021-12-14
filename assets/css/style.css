@@ -17,7 +17,7 @@ h1 {
 
 #depense {
     width: 90%;
-    height: 600px;
+    height: 1000px;
     border: ridge 10px #721925;
     display: flex;
     flex-direction: row;
@@ -28,7 +28,13 @@ h1 {
 }
 
 .depenses {
-    width: 15%;
+    width: 100%;
+    font-size: 0.7em;
+    margin-left: 20px;
+}
+
+input {
+    width: 20%;
 }
 
 #divTotaldepenses {
